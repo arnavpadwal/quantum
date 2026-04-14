@@ -1,6 +1,9 @@
 <div align="center">
 
-# ⚛️ Quantum
+<h1>
+  <img src="assets/images/logo.png" alt="Quantum Logo" width="50" style="vertical-align:bottom;">
+  <span style="font-size:1.5em; vertical-align:middle; margin-left:8px;">Quantum</span>
+</h1>
 
 ### Post-Quantum Secure · Pure IPv6 P2P · Zero Cloud
 
@@ -10,22 +13,33 @@
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)](https://dart.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-alpha-orange)](https://github.com)
-
+---
 </div>
 
----
 
 ## What is Quantum?
 
-Quantum is a **fully serverless, peer-to-peer messaging application** that routes all communication directly between devices over native IPv6 TCP — no STUN servers, no relay nodes, no cloud infrastructure, no accounts.
+Quantum is a **fully serverless, peer-to-peer messaging application** that routes all communication directly between devices over native IPv6 TCP, no STUN servers, no relay nodes, no cloud infrastructure, no accounts.
 
 Messages are end-to-end encrypted using **CRYSTALS-Kyber768** for post-quantum key exchange and **AES-256-GCM** for symmetric confidentiality. Every cryptographic operation happens locally. Nothing leaves your device unencrypted, and no third party ever sees your keys, messages, or contact list.
 
 ---
 
+<div align="center">
+  <img src="assets/images/onboarding_screen_1.png" alt="onboarding_screen_1" width="200" style="margin: 0 5px;">
+  <img src="assets/images/onboarding_screen_2.png" alt="onboarding_screen_2" width="200" style="margin: 0 5px;">
+  <img src="assets/images/onboarding_screen_3.png" alt="onboarding_screen_3" width="200" style="margin: 0 5px;">
+  <img src="assets/images/profile_setup_page.png" alt="onboarding_screen_3" width="200" style="margin: 0 5px;">
+  <img src="assets/images/add_contact_share_qr_screen.png" alt="add_contact_share_qr_screen" width="200" style="margin: 0 5px;">
+  <img src="assets/images/chat_screen.png" alt="chat_screen" width="200" style="margin: 0 5px;">
+</div>
+
+
+---
+
 ## Why Post-Quantum?
 
-Classical key exchange algorithms (RSA, ECDH) are broken by Shor's algorithm on a sufficiently powerful quantum computer. The **"harvest now, decrypt later"** attack — where adversaries archive today's traffic to decrypt once quantum hardware matures — is already a credible concern. Quantum uses **CRYSTALS-Kyber (NIST FIPS 203)**, a lattice-based KEM proven hard for both classical and quantum computers, ensuring your conversations remain private long-term.
+Classical key exchange algorithms (RSA, ECDH) are broken by Shor's algorithm on a sufficiently powerful quantum computer. The **"harvest now, decrypt later"** attack, where adversaries archive today's traffic to decrypt once quantum hardware matures, is already a credible concern. Quantum uses **CRYSTALS-Kyber (NIST FIPS 203)**, a lattice-based KEM proven hard for both classical and quantum computers, ensuring your conversations remain private long-term.
 
 ---
 
@@ -33,28 +47,28 @@ Classical key exchange algorithms (RSA, ECDH) are broken by Shor's algorithm on 
 
 | | Feature | Status |
 |---|---|---|
-| 🌐 | **Pure TCP/IPv6 P2P** — Direct device links, no intermediaries | ✅ |
-| 🔐 | **Kyber768 Key Exchange** — NIST post-quantum KEM | ✅ |
-| 🔒 | **AES-256-GCM Encryption** — Authenticated symmetric encryption | ✅ |
-| 📱 | **Onboarding Flow** — Animated first-launch introduction | ✅ |
-| 👤 | **Local Identity** — Name + avatar, key pair generated on-device | ✅ |
-| 📷 | **QR Code Contact Exchange** — Scan to add contacts | ✅ |
-| 💬 | **Real-time Messaging** — With sent/delivered/read receipts | ✅ |
-| 🎨 | **Material 3 Design** — Flat, clean UI with light & dark mode | ✅ |
-| 💾 | **Local-Only Storage** — Hive database, no cloud sync ever | ✅ |
+| 🌐 | **Pure TCP/IPv6 P2P**, Direct device links, no intermediaries | ✅ |
+| 🔐 | **Kyber768 Key Exchange**, NIST post-quantum KEM | ✅ |
+| 🔒 | **AES-256-GCM Encryption**, Authenticated symmetric encryption | ✅ |
+| 📱 | **Onboarding Flow**, Animated first-launch introduction | ✅ |
+| 👤 | **Local Identity**, Name + avatar, key pair generated on-device | ✅ |
+| 📷 | **QR Code Contact Exchange**, Scan to add contacts | ✅ |
+| 💬 | **Real-time Messaging**, With sent/delivered/read receipts | ✅ |
+| 🎨 | **Material 3 Design**, Flat, clean UI with light & dark mode | ✅ |
+| 💾 | **Local-Only Storage**, Hive database, no cloud sync ever | ✅ |
 | 🔔 | **Push Notifications** | 🔧 In Progress |
-| ⚙️ | **Settings Screen** — Theme toggle, profile edit, app preferences | 📋 Planned |
-| 🖼️ | **File & Media Sharing** — Encrypted image/file transfer over P2P | 📋 Planned |
-| 👥 | **Group Chats** — Decentralized multi-party conversations | 📋 Planned |
-| 📞 | **Voice / Video Calls** — Direct P2P WebRTC or raw RTP calls | 📋 Planned |
-| 🌍 | **Remote Discovery Ledger** — Private IP discovery without leakage | 📋 Planned |
-| 🧅 | **Tor Routing** — Optional onion routing for enhanced anonymity | 📋 Planned |
+| ⚙️ | **Settings Screen**, Theme toggle, profile edit, app preferences | 📋 Planned |
+| 🖼️ | **File & Media Sharing**, Encrypted image/file transfer over P2P | 📋 Planned |
+| 👥 | **Group Chats**, Decentralized multi-party conversations | 📋 Planned |
+| 📞 | **Voice / Video Calls**, Direct P2P WebRTC or raw RTP calls | 📋 Planned |
+| 🌍 | **Remote Discovery Ledger**, Private IP discovery without leakage | 📋 Planned |
+| 🧅 | **Tor Routing**, Optional onion routing for enhanced anonymity | 📋 Planned |
 
 ---
 
 ## Architecture
 
-### 🌐 P2PService — TCP over IPv6
+### 🌐 P2PService, TCP over IPv6
 
 Every app instance runs both a server and a client simultaneously:
 
@@ -63,7 +77,7 @@ Every app instance runs both a server and a client simultaneously:
 - All payloads are **newline-framed JSON** over persistent TCP streams, ensuring ordered, reliable delivery.
 - On network change events (Wi-Fi switch, reconnect), the service re-discovers the device's IPv6 address, closes all stale sockets, and re-initiates handshakes with all known contacts.
 
-### 🔐 EncryptionService — Post-Quantum E2E
+### 🔐 EncryptionService, Post-Quantum E2E
 
 **Key exchange (Kyber768):**
 On first contact, one party encapsulates a shared secret using the peer's public key. The resulting ciphertext is transmitted; the recipient decapsulates to derive the same 256-bit shared secret. A **tie-breaking protocol** based on lexicographic public key comparison ensures only one side initiates the KEM, preventing race conditions when both devices connect simultaneously.
@@ -71,7 +85,7 @@ On first contact, one party encapsulates a shared secret using the peer's public
 **Message encryption (AES-256-GCM):**
 All messages are encrypted with the derived shared secret. GCM mode provides both confidentiality and tamper-evidence with an authenticated tag.
 
-### 💾 StorageService — Hive Local DB
+### 💾 StorageService, Hive Local DB
 
 All data is stored on-device in isolated Hive boxes:
 
@@ -163,8 +177,8 @@ flutter build apk
 |---|---|---|
 | Key Exchange | CRYSTALS-Kyber768 | NIST FIPS 203 |
 | Symmetric Encryption | AES-256-GCM | NIST FIPS 197 |
-| Shared Secret Size | 256 bits | — |
-| Nonce | 96-bit random, per-message | — |
+| Shared Secret Size | 256 bits |, |
+| Nonce | 96-bit random, per-message |, |
 
 > **Alpha Disclaimer:** The cryptographic foundations are solid. Forward secrecy (double-ratchet) and peer authentication via key fingerprints are on the roadmap.
 
@@ -191,35 +205,35 @@ flutter build apk
 
 ### 🔧 Short-Term (In Progress)
 - [ ] Fix background push notifications on Android
-- [ ] Code cleanup — remove dead code, improve inline documentation
+- [ ] Code cleanup, remove dead code, improve inline documentation
 - [ ] Real-time IP and QR refresh on network interface changes
 - [ ] TCP reconnect with exponential backoff
 
 ### 🎨 UI / UX
-- [ ] **Settings Screen** — Manual theme toggle (light/dark/system), profile editing, app info
-- [ ] **Theme Persistence** — Store and restore user's preferred theme across sessions
-- [ ] **Contact Detail Screen** — View contact info, public key fingerprint, connection status
-- [ ] **Swipe to Reply** — Contextual message quoting
-- [ ] **Emoji Reactions** — Lightweight reaction protocol over P2P
+- [ ] **Settings Screen**, Manual theme toggle (light/dark/system), profile editing, app info
+- [ ] **Theme Persistence**, Store and restore user's preferred theme across sessions
+- [ ] **Contact Detail Screen**, View contact info, public key fingerprint, connection status
+- [ ] **Swipe to Reply**, Contextual message quoting
+- [ ] **Emoji Reactions**, Lightweight reaction protocol over P2P
 
 ### 📡 Protocol Enhancements
-- [ ] **Encrypted File & Image Sharing** — Stream encrypted binary blobs over the existing TCP session
-- [ ] **Group Chats** — Decentralized multi-party protocol; mesh key distribution
-- [ ] **Voice Calls** — Direct P2P audio stream over IPv6 (WebRTC or raw RTP)
-- [ ] **Video Calls** — Direct P2P video over IPv6
-- [ ] **Message Reactions & Editing** — Protocol-level message mutation support
-- [ ] **Forward Secrecy** — Double-ratchet algorithm on top of the Kyber-derived root key
-- [ ] **Key Fingerprint Verification** — In-app fingerprint for security
+- [ ] **Encrypted File & Image Sharing**, Stream encrypted binary blobs over the existing TCP session
+- [ ] **Group Chats**, Decentralized multi-party protocol; mesh key distribution
+- [ ] **Voice Calls**, Direct P2P audio stream over IPv6 (WebRTC or raw RTP)
+- [ ] **Video Calls**, Direct P2P video over IPv6
+- [ ] **Message Reactions & Editing**, Protocol-level message mutation support
+- [ ] **Forward Secrecy**, Double-ratchet algorithm on top of the Kyber-derived root key
+- [ ] **Key Fingerprint Verification**, In-app fingerprint for security
 
 ### 🌍 Discovery & Privacy
-- [ ] **Decentralized Discovery Ledger** — Each peer publishes `Encrypt(theirIP, yourPublicKey)` to a shared append-only ledger. Only the intended recipient can decrypt the address. Eliminates IP leak in QR codes and enables remote discovery without a central directory.
-- [ ] **Dynamic Per-Contact Key Derivation** — Each contact relationship uses a unique key derivative. Enables authorized contact-graph tracing (e.g., "introduced by") while preserving external anonymity.
-- [ ] **Tor / I2P Routing** — Optional routing layer for enhanced anonymity when IPv6 reachability is undesirable.
+- [ ] **Decentralized Discovery Ledger**, Each peer publishes `Encrypt(theirIP, yourPublicKey)` to a shared append-only ledger. Only the intended recipient can decrypt the address. Eliminates IP leak in QR codes and enables remote discovery without a central directory.
+- [ ] **Dynamic Per-Contact Key Derivation**, Each contact relationship uses a unique key derivative. Enables authorized contact-graph tracing (e.g., "introduced by") while preserving external anonymity.
+- [ ] **Tor / I2P Routing**, Optional routing layer for enhanced anonymity when IPv6 reachability is undesirable.
 
 ### 📱 Platform
-- [ ] **iOS Support** — Port and test on iOS (networking, camera scanner)
-- [ ] **Windows / macOS Desktop** — Platform-native builds
-- [ ] **SIM-Bound Identity (Mobile Only)** — Optional 6-character alphanumeric ID derived from SIM for human-readable addressing, without requiring a central account system
+- [ ] **iOS Support**, Port and test on iOS (networking, camera scanner)
+- [ ] **Windows / macOS Desktop**, Platform-native builds
+- [ ] **SIM-Bound Identity (Mobile Only)**, Optional 6-character alphanumeric ID derived from SIM for human-readable addressing, without requiring a central account system
 
 ---
 
@@ -231,7 +245,7 @@ Pull requests, issues, and feature suggestions are welcome. Please open an issue
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License, see [LICENSE](LICENSE) for details.
 
 ---
 
