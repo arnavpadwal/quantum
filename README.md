@@ -29,8 +29,6 @@ Messages are end-to-end encrypted using **CRYSTALS-Kyber768** for post-quantum k
   <img src="assets/images/onboarding_screen_1.png" alt="onboarding_screen_1" width="200" style="margin: 0 5px;">
   <img src="assets/images/onboarding_screen_2.png" alt="onboarding_screen_2" width="200" style="margin: 0 5px;">
   <img src="assets/images/onboarding_screen_3.png" alt="onboarding_screen_3" width="200" style="margin: 0 5px;">
-  <img src="assets/images/profile_setup_page.png" alt="onboarding_screen_3" width="200" style="margin: 0 5px;">
-  <img src="assets/images/add_contact_share_qr_screen.png" alt="add_contact_share_qr_screen" width="200" style="margin: 0 5px;">
   <img src="assets/images/chat_screen.png" alt="chat_screen" width="200" style="margin: 0 5px;">
 </div>
 
