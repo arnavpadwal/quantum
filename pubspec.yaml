@@ -1,0 +1,89 @@
+name: Quantum
+description: Pure IPv6 P2P Chat App with E2E Encryption
+publish_to: 'none'
+version: 0.5.0-alpha+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Encryption
+  xkyber_crypto:
+    git:
+      url: https://github.com/xscriptorcode/xkyber_crypto.git
+  aes256gcm: ^1.0.1
+
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # UI
+  image_picker: ^1.2.0
+  intl: ^0.20.2
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  http: ^1.5.0
+  uuid: ^4.5.1
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.1.3
+  connectivity_plus: ^7.0.0
+  flutter_local_notifications: ^17.2.1
+  package_info_plus: ^8.0.0
+  flutter_launcher_icons: ^0.14.4 # Ensure this is present for app icon configuration
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+  flutter_lints: ^5.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/logo.png
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
