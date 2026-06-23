@@ -55,7 +55,7 @@ Classical key exchange algorithms (RSA, ECDH) are broken by Shor's algorithm on 
 | 🎨 | **Material 3 Design**, Flat, clean UI with light & dark mode | ✅ |
 | 💾 | **Local-Only Storage**, Hive database, no cloud sync ever | ✅ |
 | 🔔 | **Push Notifications** | 🔧 In Progress |
-| ⚙️ | **Settings Screen**, Theme toggle, profile edit, app preferences | 📋 Planned |
+| ⚙️ | **Settings Screen**, Theme toggle, profile edit, app preferences | 📋In Progress |
 | 🖼️ | **File & Media Sharing**, Encrypted image/file transfer over P2P | 📋 Planned |
 | 👥 | **Group Chats**, Decentralized multi-party conversations | 📋 Planned |
 | 📞 | **Voice / Video Calls**, Direct P2P WebRTC or raw RTP calls | 📋 Planned |
